@@ -7,17 +7,17 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using StChat.Helpers;
-using StChat.Services;
+using VueChat.Helpers;
+using VueChat.Services;
 using AutoMapper;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
-using StChat.Hubs;
+using VueChat.Hubs;
 using System.Security.Claims;
 
-namespace StChat
+namespace VueChat
 {
     public class Startup
     {
@@ -32,8 +32,8 @@ namespace StChat
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            // services.AddDbContext<DataContext>(x => x.UseInMemoryDatabase("TestDb"));
-            services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("ChatDbContext")));
+            services.AddDbContext<DataContext>(x => x.UseInMemoryDatabase("chatmemdb"));
+            //services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("ChatDbContext")));
             services.AddMvc();
 
             services.AddSignalR();
@@ -68,13 +68,13 @@ namespace StChat
                         }
                         else
                         {
-                            const string Issuer = "https://stchat.stiona.com";
+                            const string Issuer = "https://VueChat.stiona.com";
 
                             var claims = new List<Claim>{
                                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString(), ClaimValueTypes.String, Issuer)
                             };
 
-                            var identity = new ClaimsIdentity(claims, "stchat");
+                            var identity = new ClaimsIdentity(claims, "VueChat");
 
                             context.Principal.AddIdentity(identity);
                         }

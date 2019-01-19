@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
-using StChat.Dtos;
-using StChat.Entities;
-using StChat.Helpers;
+using VueChat.Dtos;
+using VueChat.Entities;
+using VueChat.Helpers;
 
-namespace StChat.Services
+namespace VueChat.Services
 {
     public interface IContactService
     {

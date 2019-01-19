@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
-using StChat.Dtos;
-using StChat.Services;
+using VueChat.Dtos;
+using VueChat.Services;
 
-namespace StChat.Hubs
+namespace VueChat.Hubs
 {
 
     [Authorize]

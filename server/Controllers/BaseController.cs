@@ -1,10 +1,10 @@
 
 using System;
 using Microsoft.AspNetCore.Mvc;
-using StChat.Entities;
-using StChat.Services;
+using VueChat.Entities;
+using VueChat.Services;
 
-namespace StChat.Controllers
+namespace VueChat.Controllers
 {
     
     public class BaseController : ControllerBase

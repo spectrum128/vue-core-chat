@@ -1,4 +1,4 @@
-namespace StChat.Dtos
+namespace VueChat.Dtos
 {
     public class UserDto
     {

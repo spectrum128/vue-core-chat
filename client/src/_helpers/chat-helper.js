@@ -16,7 +16,7 @@ export const chatHelper = {
 
 function start(options){
 
-    let chaturl = "http://localhost:4000";
+    let baseurl = "http://localhost:4000";
 
     if(options && options.baseurl){
         baseurl = options.baseurl;

@@ -1,4 +1,4 @@
-namespace StChat.Helpers
+namespace VueChat.Helpers
 {
     public class AppSettings
     {

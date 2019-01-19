@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using StChat.Entities;
-using StChat.Helpers;
+using VueChat.Entities;
+using VueChat.Helpers;
 
-namespace StChat.Services
+namespace VueChat.Services
 {
     public interface IUserService
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace StChat.Dtos
+namespace VueChat.Dtos
 {
 
     public class ContactDto

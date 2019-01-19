@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.SignalR;
-using StChat.Hubs;
+using VueChat.Hubs;
 
-namespace StChat.Services
+namespace VueChat.Services
 {
 
     public interface IHubService

@@ -1,8 +1,8 @@
 using AutoMapper;
-using StChat.Dtos;
-using StChat.Entities;
+using VueChat.Dtos;
+using VueChat.Entities;
 
-namespace StChat.Helpers
+namespace VueChat.Helpers
 {
     public class AutoMapperProfile : Profile
     {

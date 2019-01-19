@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using StChat.Entities;
+using VueChat.Entities;
 
-namespace StChat.Helpers
+namespace VueChat.Helpers
 {
     public class DataContext : DbContext
     {

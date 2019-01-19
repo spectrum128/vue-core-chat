@@ -1,6 +1,6 @@
 using System;
 
-namespace StChat.Entities
+namespace VueChat.Entities
 {
     public class User
     {
